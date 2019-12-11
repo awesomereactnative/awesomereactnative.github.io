@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Awesome React Native</title>
+    <link>https://awesomereactnative.com/</link>
+    <description>Recent content on Awesome React Native</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2019 23:26:30 +0700</lastBuildDate>
+    
+	<atom:link href="https://awesomereactnative.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Displaying Image from URL in React Native</title>
+      <link>https://awesomereactnative.com/displaying-image-from-url-in-react-native/</link>
+      <pubDate>Wed, 11 Dec 2019 23:26:30 +0700</pubDate>
+      
+      <guid>https://awesomereactnative.com/displaying-image-from-url-in-react-native/</guid>
+      <description>In this blog post I will show you how to display an image from URL in React Native application.
+First step is create a new React Native project by command below on your terminal.
+npx react-native init DisplayImageFromURL  Open created project on your code editor and clear current code in App.js file then implement App.js as steps below.
+Import components import React from &amp;#39;react&amp;#39;import { View, Image } from &amp;#39;react-native&amp;#39;</description>
+    </item>
+    
+  </channel>
+</rss>

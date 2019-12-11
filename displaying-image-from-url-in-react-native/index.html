@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Displaying Image from URL in React Native</title>
+    <link rel="stylesheet" type="text/css" href="https://awesomereactnative.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://awesomereactnative.com/css/all.min.css" />
+    <link rel="stylesheet" href="https://awesomereactnative.com/css/style.min.css?version=1" integrity="" media="screen" />
+</head><body><nav class="navbar navbar-light bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="https://awesomereactnative.com/">
+            <img src="https://awesomereactnative.com//images/react_logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Awesome React Native
+        </a>
+    </div>
+</nav><div id="content">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9" style="background-color: #FFF;margin-top:20px;">
+            <h3>Displaying Image from URL in React Native</h3>
+            <div><p>In this blog post I will show you how to display an image from URL in React Native application.</p>
+
+<p>First step is create a new React Native project by command below on your terminal.</p>
+
+<pre><code>npx react-native init DisplayImageFromURL
+</code></pre>
+
+<p><img src="/images/npx_react-native_init_DisplayImageFromURL.png" alt="Create new React Native Project DisplayImageFromURL" class="img-fluid">
+Open created project on your code editor and clear current code in App.js file then implement App.js as steps below.</p>
+
+<p>Import components
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-react" data-lang="react"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">Image</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span></code></pre></div></p>
+
+<p>Display image from <a href="https://awesomereactnative.com/images/react-logo.png">https://awesomereactnative.com/images/react-logo.png</a> by using Image component.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-react" data-lang="react"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span>(
+      &lt;<span style="color:#f92672">View</span>&gt;
+        &lt;<span style="color:#f92672">Image</span> <span style="color:#a6e22e">source</span><span style="color:#f92672">=</span><span style="color:#e6db74">{{</span> <span style="color:#a6e22e">uri</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">https</span><span style="color:#960050;background-color:#1e0010">://</span><span style="color:#a6e22e">awesomereactnative.com</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">images</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">react</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#a6e22e">logo.png</span><span style="color:#960050;background-color:#1e0010">&#39;</span> }}
+          <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">{{</span> <span style="color:#a6e22e">width</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">400</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">height</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">400</span> }} /&gt;
+      &lt;/<span style="color:#f92672">View</span>&gt;
+    )
+  }
+}</code></pre></div></p>
+
+<p>Export the App component
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-react" data-lang="react"><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span></code></pre></div></p>
+
+<p>The complete App.js file as below
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-react" data-lang="react"><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">Image</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>
+
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">App</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">React</span>.<span style="color:#a6e22e">Component</span> {
+  <span style="color:#a6e22e">render</span>() {
+    <span style="color:#66d9ef">return</span>(
+      &lt;<span style="color:#f92672">View</span>&gt;
+        &lt;<span style="color:#f92672">Image</span> <span style="color:#a6e22e">source</span><span style="color:#f92672">=</span><span style="color:#e6db74">{{</span> <span style="color:#a6e22e">uri</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">https</span><span style="color:#960050;background-color:#1e0010">://</span><span style="color:#a6e22e">awesomereactnative.com</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">images</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">react</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#a6e22e">logo.png</span><span style="color:#960050;background-color:#1e0010">&#39;</span> }}
+          <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">{{</span> <span style="color:#a6e22e">width</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">400</span><span style="color:#960050;background-color:#1e0010">,</span> <span style="color:#a6e22e">height</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#a6e22e">400</span> }} /&gt;
+      &lt;/<span style="color:#f92672">View</span>&gt;
+    )
+  }
+}
+
+<span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">App</span></code></pre></div></p>
+
+<p>Run application in your simulator by command</p>
+
+<pre><code>npx react-native run-android 
+</code></pre>
+
+<p>Below is the result as Android application</p>
+
+<p><img src="/images/DisplayImageFromURL-on-Android.png" alt="Displaying Image from URL in React Native on Android" class="img-fluid"></p>
+
+<p>The source code of this tutorial can be downloaded at:</p>
+
+<p><a href="https://github.com/awesomereactnative/DisplayImageFromURL/archive/1.0.0.zip" class="btn btn-primary btn-download-source"><i class="fas fa-download"></i> Download Source Code</a></p>
+
+<p>You can reference step by step guide via the video below
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tdhpowd-vto?rel=0" allowfullscreen></iframe>
+</div></p>
+
+<p>Happy Coding😊</p>
+</div>
+        </div>
+        <div class="col-lg-3">
+                <h6>Tags</h6>
+                <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <a href="https://awesomereactnative.com/tag/image">
+                        image
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        </div><footer>
+    <div class="copy-wrapper">
+        <div class="container">
+            <p class="copyright">Copyright &#xA9; 2019 AwesomeReactNative.com All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153158924-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153158924-1');
+</script></body>
+</html>
